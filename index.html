@@ -383,10 +383,10 @@ function updateToggleBasedOnTime() {
   const allStudentsToggle = document.getElementById('allStudents');
 
   
-  if ((currentHour === 15 && currentMinute === 45)||(currentHour==13 && currentMinute === 0)||(currentHour==16 && currentMinute === 0) && !allStudentsToggle.checked) {
+  if ((currentHour === 15 && currentMinute === 56)||(currentHour==13 && currentMinute === 0)||(currentHour==16 && currentMinute === 0) && !allStudentsToggle.checked) {
     allStudentsToggle.checked = true;
     allStudentsToggle.dispatchEvent(new Event('change'));
-  } else if ((currentHour === 15 && currentMinute ===48) || (currentHour==14 && currentMinute === 0)||(currentHour==19 && currentMinute === 0)) {
+  } else if ((currentHour === 15 && currentMinute ===59) || (currentHour==14 && currentMinute === 0)||(currentHour==19 && currentMinute === 0)) {
     allStudentsToggle.checked = false;
     allStudentsToggle.dispatchEvent(new Event('change'));
   }
